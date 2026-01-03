@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlap Oracle Maps</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .intro {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+        
+        .maps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .map-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .map-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+        
+        .map-card h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .map-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .map-card a {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .map-card a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗺️ Overlap Oracle Maps</h1>
+            <p>Interactive Geographic Analysis & Visualization</p>
+        </header>
+        
+        <div class="content">
+            <div class="intro">
+                <h2>About These Maps</h2>
+                <p>Welcome to the Overlap Oracle mapping showcase. These interactive maps demonstrate advanced geographic analysis and visualization capabilities, highlighting territorial overlaps, administrative boundaries, and trade relationships.</p>
+            </div>
+            
+            <div class="maps-grid">
+                <div class="map-card">
+                    <h2>TOC Operating Area</h2>
+                    <p>Visualization of Theater Operations Center (TOC) operating areas with boundary analysis and territorial coverage.</p>
+                    <a href="TOC Opeating Area Map.html">View Map →</a>
+                </div>
+                
+                <div class="map-card">
+                    <h2>TOC Admin Boundaries</h2>
+                    <p>Administrative boundary mapping showing jurisdictional divisions and organizational territories.</p>
+                    <a href="TOC_Admin_Boundaries_Map.html">View Map →</a>
+                </div>
+                
+                <div class="map-card">
+                    <h2>US Trade 2024</h2>
+                    <p>Interactive trade flow visualization showing U.S. trade relationships and patterns for 2024.</p>
+                    <a href="US_Trade_2024_HTML_Map.html">View Map →</a>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Created with <strong>Overlap Oracle</strong> | <a href="https://github.com/Mr-Robotto-66/OO_Mapping" target="_blank">View on GitHub</a></p>
+        </footer>
+    </div>
+</body>
+</html>
